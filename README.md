@@ -10,8 +10,6 @@ A [dataset] has the number of bicycles rented during a day in a community, and o
 
 [Linear regression] can estimate values for a variable given other correlated variables. It does that by fitting a mathematical function with coefficients associated with each variable composing the function. When multiple explanatory variables are used to predict an explained variable, a multiple linear regression is performed. When multiple variables are present, more complex regression models may generate better results. However, it is important to control the complexity of a regressor model so that it remains efficient and interpretable. Fortunately, we can control the complexity of a regressor model when we are dealing with regressors built using [neural networks].
 
-
-
 ## Analysis Introduction
 
 [Deep neural networks] are capable of learning both linear and non-linear relationships between variables. Like this, it becomes possible to understand deeper connections between the independent and dependent variables. On the other hand, it has been known that [deep neural networks with 3 hidden layers are enough to model pratically all patterns in the data]. This provides an upper bound on the complexity of a neural network regressor, as its complexity is determined by the number of layers and neurons in it.
@@ -23,7 +21,7 @@ Using a neural network regressor with 3 hidden layers, we have set up a model th
 With an [R2 score] of 0.89, we argue that this neural network model is able to work pretty well with the bicycle rental dataset. A [mean absolute error] (MAE) of about 5% of the dependent variable's range confirms this notion. Additionally, the MAE only deviates from the mean by roughly 10% of the average number of bicycles rented.
 
 [//]: #
-[dataset]: <https://www.kaggle.com/competitions/bike-sharing-demand/data>
+[dataset]: <https://www.kaggle.com/lakshmi25npathi/bike-sharing-dataset>
 [neural networks]: <https://www.ibm.com/topics/neural-networks>
 [Deep neural networks]: <https://www.ibm.com/topics/deep-learning>
 [Linear regression]: <https://en.wikipedia.org/wiki/Linear_regression>
