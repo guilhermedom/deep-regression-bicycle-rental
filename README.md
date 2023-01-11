@@ -18,6 +18,7 @@ A [dataset] has the number of bicycles rented during a day in a community, and o
 
 Using a neural network regressor with 3 hidden layers, we have set up a model that predicts bicycle rental with a close linear relationship with the actual numbers:
 
+![deep_regression_bicycle_sharing_actual_vs_predicted](https://user-images.githubusercontent.com/33037020/211704479-5336ea14-6fce-4fdb-b1eb-1573a9f370dd.PNG)
 
 With an [R2 score] of 0.89, we argue that this neural network model is able to work pretty well with the bicycle rental dataset. A [mean absolute error] (MAE) of about 5% of the dependent variable's range confirms this notion. Additionally, the MAE only deviates from the mean by roughly 10% of the average number of bicycles rented.
 
