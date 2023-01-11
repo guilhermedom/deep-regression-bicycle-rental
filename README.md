@@ -6,7 +6,25 @@ TensorFlow deep regression model predicting bicycle rental.
 
 ## Problem Overview
 
-A [dataset] has the number of bicycles rented during a day in a community, and other data related to the amount of bicycle renting, such as the weather situation on that day. The dataset has 731 instances and 15 variables. There are 7 categorical and 5 numerical variables among the explanatory variables. The remaining 3 variables can be considered explained, or dependent, variables. We aim to create a model to estimate the number of rented bicycles in a day.
+A [dataset] has the number of bicycles rented during a day in a community, and other data related to the amount of bicycle renting, such as the weather situation on that day. The dataset has 731 instances and 15 variables. There are 7 categorical and 5 numerical variables among the explanatory variables. The remaining 3 variables can be considered explained, or dependent, variables. We aim to create a model to estimate the number of rented bicycles in a day. The next table summarizes our data:
+
+| Attribute | Summary |
+|:---------:|:-------:|
+| Instant | Sequential ID for each day. |
+| Dteday | Date for the instance, formatted as M/D/YYYY. |
+| Season | Season (1: spring; 2: summer; 3: fall; 4: winter). |
+| Yr | Year (0: 2011; 1: 2012). |
+| Mnth | Month (1 to 12). |
+| Holiday | If day is a holiday or not (0: not holiday; 1: holiday). |
+| Weekday | Day of the week. |
+| Workingday | If day is holiday/weekend or not (0: holiday/weekend; 1: working day). |
+| Weathersit | Weather type (1: clear; 2: mist; 3: light snow or light rain; 4: snow or heavy rain). |
+| Temp | Normalized temperature in Celsius. |
+| Hum | Normalized humidity. |
+| Windspeed | Normalized wind speed. |
+| Casual | Count of casual users. |
+| Registered | Count of registered users. |
+| Cnt | Total bike rentings, including both casual and registered. |
 
 [Linear regression] can estimate values for a variable given other correlated variables. It does that by fitting a mathematical function with coefficients associated with each variable composing the function. When multiple explanatory variables are used to predict an explained variable, a multiple linear regression is performed. When multiple variables are present, more complex regression models may generate better results. However, it is important to control the complexity of a regressor model so that it remains efficient and interpretable. Fortunately, we can control the complexity of a regressor model when we are dealing with regressors built using [neural networks].
 
